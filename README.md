@@ -56,7 +56,7 @@ It allows me to Alt+Tab which Niri doesn't have functionality for by default, no
 
 ### Waybar
 
-Was partially inspired by [GNOME](https://gitlab.gnome.org/GNOME/gnome-desktop), however it sucked to use, and I don't personally really like how GTK looks.
+Was partially inspired by [GNOME](https://gitlab.gnome.org/GNOME/gnome-desktop) as I like how it looks, however GNOME itself sucked to use, and I don't personally really like how GTK looks.
 
 I have my current active application information on the left to replace the fact that I've purposfully removed CSD from all applications, an update checker besides my time (as I look at it extremely frequently), a friend's time, and my system vitals on the right. (CPU, Memory)
 

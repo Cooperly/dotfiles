@@ -1,0 +1,65 @@
+//         "source": "~/.config/fastfetch/arch.txt",
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  ASCII-ART
+//
+//  by Bina
+
+
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos
+        "padding": {
+	        "top": 1,
+          "left": 1,
+	      },
+        "color": {"1": "#d8c2f2", "2": "#d8c2f2"} ,
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+	"break",
+        {
+            "type": "cpu",
+            "key": "cpu     ",
+            "keyColor": "#d8c2f2"
+        },
+        {
+            "type": "gpu",
+            "key": "gpu     ",
+            "keyColor": "#d8c2f2"
+        },
+        {
+            "type": "memory",
+            "key": "memory  ",
+            "keyColor": "#d8c2f2",
+        },
+        {
+            "type": "swap",
+            "key": "swap    ",
+            "keyColor": "#d8c2f2",
+        },
+        {
+            "type": "uptime",
+            "format": "{2}h {3}m",
+            "key": "uptime  ",
+            "keyColor": "#d8c2f2",
+        },
+        {
+            "type": "command",
+            "key": "lifetime",
+            "keyColor": "#d8c2f2",
+            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+        },
+        {
+            "type": "colors",
+            "symbol": "circle"
+        },
+
+        "break",
+    ]
+}

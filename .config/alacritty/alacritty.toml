@@ -1,0 +1,4 @@
+[general]
+import = [
+    "/home/void/.config/alacritty/protopurple.toml"
+]

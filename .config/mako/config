@@ -1,0 +1,13 @@
+sort=-time
+layer=overlay
+background-color=#1d1b21
+width=300
+height=200
+border-size=2
+border-color=#d8c3f3
+border-radius=0
+icons=1
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+font=rubik 10

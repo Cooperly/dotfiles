@@ -48,6 +48,8 @@ What this allows me to do is make all my windows maximized by default, and I ess
 
 Niri's workspaces (vertical space) are used to sort applications by type, and I can use horizontal space to switch to various applications which are maximized by default, which is nice compared to having to deal with small windows when realistically most of my time is going to be spent with applications maximized. 
 
+The only complaint I have with it is that certain games do not behave correctly due to the infinite horizontal space, some games will work fine (Minecraft), others will require GameScope to not get weird cursor behavior (Battlefield 4, Rust), some will refuse to work even under GameScope (PEAK). Normal applications work fine, the only issue that I have is that Rider (C# IDE) doesn't automatically let me start typing when I focus it using keyboard shortcuts unless I click it with my mouse.
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8bc66ec2-47f3-4aaa-aeb3-9efdfe1e0c6d" />
 
 ### NiriSwitcher

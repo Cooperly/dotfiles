@@ -274,7 +274,6 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
-spawn-at-startup "niriswitcher"
 spawn-at-startup "swww-daemon"
 spawn-sh-at-startup "carla /home/void/carladefault.carxp"
 spawn-sh-at-startup "systemctl --user start plasma-polkit-agent"
@@ -403,6 +402,35 @@ window-rule {
     open-maximized true
 }
 
+recent-windows {
+    // off
+    open-delay-ms 0
+
+    highlight {
+        active-color "#d9c2f2"
+        urgent-color "#ff9999ff"
+        padding 30
+        corner-radius 0
+    }
+
+    previews {
+        max-height 540
+        max-scale 0.5
+    }
+
+    binds {
+        Alt+Tab         { next-window     scope="workspace"; }
+        Alt+Shift+Tab   { previous-window scope="workspace"; }
+        Alt+grave       { next-window     filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
+
+        Mod+Tab         { next-window     scope="all"; }
+        Mod+Shift+Tab   { previous-window scope="all"; }
+        Mod+grave       { next-window     filter="app-id"; }
+        Mod+Shift+grave { previous-window filter="app-id"; }
+    }
+}
+
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
@@ -446,9 +474,6 @@ binds {
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
     Mod+Space repeat=false { toggle-overview; }
-
-    Alt+Tab repeat=false { spawn "gdbus" "call" "--session" "--dest" "io.github.isaksamsten.Niriswitcher" "--object-path" "/io/github/isaksamsten/Niriswitcher" "--method" "io.github.isaksamsten.Niriswitcher.application" ; }
-    Alt+Shift+Tab repeat=false { spawn "gdbus" "call" "--session" "--dest" "io.github.isaksamsten.Niriswitcher" "--object-path" "/io/github/isaksamsten/Niriswitcher" "--method" "io.github.isaksamsten.Niriswitcher.application" ; }
 
     Alt+F4 repeat=false { close-window; }
 

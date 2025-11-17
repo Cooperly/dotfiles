@@ -14,7 +14,6 @@ But it works pretty damn good.
 ## Prerequisites
 - Desktop Environment
   - [Niri](https://github.com/YaLTeR/niri)
-  - [NiriSwitcher](https://github.com/isaksamsten/niriswitcher)
   - [WayBar](https://github.com/Alexays/Waybar)
   - [Mako](https://github.com/emersion/mako)
 - Terminal
@@ -51,10 +50,6 @@ Niri's workspaces (vertical space) are used to sort applications by type, and I 
 The only complaint I have with it is that certain games do not behave correctly due to the infinite horizontal space, some games will work fine (Minecraft, Factorio), others will require GameScope to not get weird cursor behavior (Battlefield 4, Rust), some will refuse to work even under GameScope (PEAK). Normal applications work fine, the only issue that I have is that Rider (C# IDE) doesn't automatically let me start typing when I focus it using keyboard shortcuts unless I click it with my mouse.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8bc66ec2-47f3-4aaa-aeb3-9efdfe1e0c6d" />
-
-### NiriSwitcher
-
-It allows me to Alt+Tab which Niri doesn't have functionality for by default, not too special.
 
 ### Waybar
 
